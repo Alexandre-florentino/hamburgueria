@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerMaster - Hamburgueria Artesanal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="fotos/burguer logo.jpg" alt="BurgerMaster">
+                <span>BurgerMaster</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="animate-slide">Os melhores hambúrgueres <span>artesanais</span> da cidade</h1>
+            <p class="animate-slide">Feitos com ingredientes selecionados e muito amor</p>
+            <a href="#menu" class="btn animate-slide">Ver Menu</a>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2 class="section-title">Nosso <span>Menu</span></h2>
+        <div class="menu-container">
+            <div class="menu-item animate-fade">
+                <img src="fotos/burguer 1.jpg" alt="Burger Clássico">
+                <h3>Burger Clássico</h3>
+                <p>Pão brioche, hambúrguer 180g, queijo cheddar, alface, tomate e molho especial</p>
+                <span class="price">R$ 24,90</span>
+                <button class="btn order-btn" data-item="Burger Clássico">Pedir Agora</button>
+            </div>
+            <div class="menu-item animate-fade">
+                <img src="fotos/burguer 2.jpg" alt="Burger Bacon">
+                <h3>Burger Bacon</h3>
+                <p>Pão australiano, hambúrguer 200g, queijo emental, bacon crocante e cebola caramelizada</p>
+                <span class="price">R$ 29,90</span>
+                <button class="btn order-btn" data-item="Burger Bacon">Pedir Agora</button>
+            </div>
+            <div class="menu-item animate-fade">
+                <img src="fotos/burguer 3.jpg" alt="Burger Vegetariano">
+                <h3>Burger Vegetariano</h3>
+                <p>Pão integral, hambúrguer de grão de bico, queijo coalho, rúcula e abacate</p>
+                <span class="price">R$ 27,90</span>
+                <button class="btn order-btn" data-item="Burger Vegetariano">Pedir Agora</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content animate-fade">
+            <h2 class="section-title">Sobre <span>Nós</span></h2>
+            <p>A BurgerMaster nasceu da paixão por hambúrgueres artesanais feitos com ingredientes de qualidade. Nossa missão é oferecer uma experiência gastronômica única, onde cada mordida conta uma história de sabor e tradição.</p>
+            <p>Usamos apenas carne 100% bovina, pães frescos diariamente e ingredientes selecionados para garantir o melhor sabor em cada burger.</p>
+        </div>
+        <div class="about-image animate-fade">
+            <img src="fotos/sobre 2.jpg" alt="Sobre a BurgerMaster">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Faça seu <span>Pedido</span></h2>
+        <form id="order-form" class="order-form animate-fade">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">WhatsApp:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="item">Item:</label>
+                <select id="item" name="item" required>
+                    <option value="">Selecione um item</option>
+                    <option value="Burger Clássico">Burger Clássico - R$ 24,90</option>
+                    <option value="Burger Bacon">Burger Bacon - R$ 29,90</option>
+                    <option value="Burger Vegetariano">Burger Vegetariano - R$ 27,90</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+                <label for="notes">Observações:</label>
+                <textarea id="notes" name="notes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BurgerMaster</h3>
+                <p>Hamburgueria artesanal com os melhores sabores da cidade.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+                <p><i class="fas fa-envelope"></i> contato@burgermaster.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horário</h3>
+                <p>Terça a Domingo</p>
+                <p>18:00 - 23:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 BurgerMaster. Todos os direitos reservados.</p>
+            <p class="dev-credit">Desenvolvido por <a href="https://wa.me/message/K7WYLEKTLBX4H1" target="_blank" rel="external">Alexandre Florentino</a></p>
+        </div>
+    </footer>
+
+    <div class="order-modal" id="order-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Pedido realizado com sucesso!</h3>
+            <p id="order-details"></p>
+            <p>Seu pedido será preparado e entraremos em contato para confirmar.</p>
+            <button class="btn" id="close-btn">Fechar</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
